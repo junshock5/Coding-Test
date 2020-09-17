@@ -1,11 +1,11 @@
-package com.company;
+package com.company.kakao;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 
-class Main {
+class two_2 {
     public static void main(String[] args) throws IOException {
 
         //Collection<Integer> list = new ArrayList<CustomObject>();
