@@ -32,6 +32,7 @@ class two_final {
         arr.add(14);
         arr.add(54);
 
+        //kakao 2qustion
         int valueMax = 0;
         int valueMin = 200001;
         int max = -1;
