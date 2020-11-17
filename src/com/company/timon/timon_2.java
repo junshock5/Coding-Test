@@ -4,6 +4,7 @@ class timon_2 {
 
     /*
     참고 : https://namocom.tistory.com/377
+    https://blog.advenoh.pe.kr/algorithm/Algorithm-%EC%A0%95%EC%88%98%EA%B0%92%EC%97%90%EC%84%9C-1%EC%9D%B4-%EC%84%A4%EC%A0%95%EB%90%9C-bit%EB%A5%BC-%EC%B9%B4%EC%9A%B4%ED%8A%B8%ED%95%98%EA%B8%B0/
     방법1. 이진 문자열로 바꾸어 1인 문자를 센다.
     방법2. 비트연산자로 마스킹하여 센다.
     방법3. 1을 빼서 구한 후 원래 수와 AND연산의 횟수로 구하기
@@ -20,7 +21,7 @@ class timon_2 {
         int resultCount = 0;
         while (number > 0) {
             resultCount += number & 1; //마지막 bit가 1이면 count함 (AND로 확인)
-            number >>= 1; //마지막 bit를 삭제함
+            number >>= 1; //마지막 bit를 삭제함, 삭제하지 않으면 무한루프에 빠진다. 즉 값을 줄여나간다.
         }
         return resultCount;
     }

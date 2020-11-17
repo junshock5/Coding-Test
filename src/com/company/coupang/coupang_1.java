@@ -1,12 +1,9 @@
-package com.company;
+package com.company.coupang;
 
-import java.text.ParseException;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 
-class Main {
+class coupang_1 {
 
     public static long solution(int n, int r, int c){
         long answer =0;
