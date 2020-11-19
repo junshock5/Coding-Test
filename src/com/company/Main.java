@@ -1,73 +1,26 @@
 package com.company;
 
-import java.text.ParseException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Scanner;
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.function.*;
+import java.util.regex.*;
+import java.util.stream.*;
 
+import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.toList;
 
 class Main {
 
-    public static long solution(int n, int r, int c){
-        long answer =0;
-
-        System.out.println("hi");
-
-        return answer;
-    }
-
-
     public static void main(String[] args) {
 
-        Scanner in = new Scanner(System.in);
-        int n = in.nextInt();
-        in.close();
+        Scanner sc=new Scanner(System.in);
+        String A=sc.next();
+        /* Enter your code here. Print output to STDOUT. */
 
-//      int n = 5;
 
-        int[][] array = new int[n][n];
-
-        // 배열에 입력할 증가값
-        int count = 1;
-
-        // 배열의 현재 위치
-        int currentX = 0;
-        int currentY = 0;
-
-        // 0, 0 위치를 1로 초기화
-        array[currentX][currentY] = count++;
-
-        while(count <= n*n) {
-
-            // x가 n보다 작은 동안은 x 증가, 이후에는 y 증가
-            if(currentX + 1 < n) {
-                currentX++;
-            } else {
-                currentY++;
-            }
-
-            array[currentX][currentY] = count++;
-
-            // 우상향으로 이동
-            while(currentX - 1 > -1 && currentY + 1 < n) {
-                array[--currentX][++currentY] = count++;
-            }
-
-            // y가 n 보다 작은 동안은 y 증가, 이후에는 x증가
-            if(currentY + 1 < n) {
-                currentY++;
-            } else {
-                currentX++;
-            }
-
-            array[currentX][currentY] = count++;
-
-            // 좌하향으로 이동
-            while(currentY - 1 > -1 && currentX + 1 < n) {
-                array[++currentX][--currentY] = count++;
-            }
-        }
-
-        System.out.println(array[1][2]);
     }
 }
