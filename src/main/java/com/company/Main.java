@@ -15,12 +15,9 @@ import static java.util.stream.Collectors.toList;
 
 class Main {
 
-    public static void main(String[] args) {
+    private static final String FILE_DIRECTORY_NAME = System.getProperty("user.dir") + File.separator;
 
-        Scanner sc=new Scanner(System.in);
-        String A=sc.next();
-        /* Enter your code here. Print output to STDOUT. */
-
-
+    public static void main(String[] args)  {
+        //System.out.println("SDfdsf");
     }
 }
