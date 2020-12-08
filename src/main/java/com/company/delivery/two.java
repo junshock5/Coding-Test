@@ -1,19 +1,6 @@
-package main.java.com.company;
+package main.java.com.company.delivery;
 
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.function.*;
-import java.util.regex.*;
-import java.util.stream.*;
-
-import static java.util.stream.Collectors.joining;
-import static java.util.stream.Collectors.toList;
-
-class Main {
+class two {
 
     public static int solution(int N, int K) { //K 올인 횟수, N은 총 배틀 칩 갯수
         // write your code in Java SE 8
