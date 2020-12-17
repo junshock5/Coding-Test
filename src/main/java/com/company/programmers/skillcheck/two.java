@@ -1,19 +1,6 @@
-package main.java.com.company;
+package main.java.com.company.programmers.skillcheck;
 
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.function.*;
-import java.util.regex.*;
-import java.util.stream.*;
-
-import static java.util.stream.Collectors.joining;
-import static java.util.stream.Collectors.toList;
-
-class Main {
+class two {
     public static int solution(int n) {
         if(n == 1 || n == 2) return 1; // @1
 
