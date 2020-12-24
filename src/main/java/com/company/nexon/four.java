@@ -1,13 +1,13 @@
-package main.java.com.company;
+package main.java.com.company.nexon;
 
-import java.util.*;
 import java.io.*;
-import java.util.*;
-import java.util.regex.*;
+import java.util.HashSet;
+import java.util.Scanner;
 
 
-class Main {
+class four {
     private static final Scanner scan = new Scanner(System.in);
+
     static String readFile(String fileName) throws IOException {
         BufferedReader br = new BufferedReader(new FileReader(fileName));
         try {
@@ -21,7 +21,8 @@ class Main {
                 if (line.contains(".gif")) {
                     sb.append(lastWord);
                     sb.append("\n");
-                } else if (line.contains(".GIF")) {
+                }
+                else if (line.contains(".GIF")) {
                     sb.append(lastWord);
                     sb.append("\n");
                 }

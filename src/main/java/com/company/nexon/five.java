@@ -1,30 +1,30 @@
-package main.java.com.company;
+package main.java.com.company.nexon;
 
-import java.util.*;
 import java.io.*;
-import java.util.*;
-import java.util.regex.*;
+import java.util.HashSet;
+import java.util.Scanner;
 
 
-class Main {
+class five {
     private static final Scanner scan = new Scanner(System.in);
+
     static String readFile(String fileName) throws IOException {
         BufferedReader br = new BufferedReader(new FileReader(fileName));
         try {
             StringBuilder sb = new StringBuilder();
             String line = br.readLine();
+            HashSet<String> hs = new HashSet<>();
             while (line != null) {
                 String[] temp = line.split(" ");
-                String tempRes = temp[6];
-                String lastWord = tempRes.substring(tempRes.lastIndexOf("/") + 1);
+                String tempRes = temp[3];
+                tempRes = tempRes.replace("[", "");
 
-                if (line.contains(".gif")) {
-                    sb.append(lastWord);
-                    sb.append("\n");
-                } else if (line.contains(".GIF")) {
-                    sb.append(lastWord);
+                if (hs.contains(tempRes)) {
+                    sb.append(tempRes);
                     sb.append("\n");
                 }
+                hs.add(tempRes);
+
                 line = br.readLine();
             }
             System.out.println(sb.toString());
@@ -36,11 +36,10 @@ class Main {
 
     public static void main(String args[]) throws Exception {
         String filename;
-        //filename = scan.next();
-        filename = "hosts_access_log_00.txt";
+        filename = scan.next();
         OutputStream os = null;
         String data = readFile(filename);
-        String resultFileName = "gifs_" + filename;
+        String resultFileName = "req_" + filename;
 
         try {
             os = new FileOutputStream(new File(resultFileName), true);

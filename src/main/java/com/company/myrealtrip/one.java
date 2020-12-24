@@ -1,4 +1,4 @@
-package main.java.com.company.myreal;
+package main.java.com.company.myrealtrip;
 
 import java.util.Arrays;
 import java.util.Collections;
