@@ -1,8 +1,10 @@
-package main.java.com.company;
+package main.java.com.company.hanwha;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.TreeMap;
 
-class Main {
+class two {
     public static String[] solution(String[] rooms, int target) {
         String[] answer = {};
         ArrayList<String> strings = new ArrayList<String>();//타입설정 int타입만 사용가능
